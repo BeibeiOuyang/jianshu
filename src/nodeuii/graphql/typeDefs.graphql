@@ -1,0 +1,26 @@
+
+type Writer {
+  id: Int
+  name: String
+  writeNum: Int
+  star: Int
+  imgUrl: String
+}
+
+type Artical {
+  id: Int
+  title: String
+  desc: String
+  imgUrl: String
+}
+
+type detail {
+  title: String
+  content: String
+}
+
+type Query {
+  writerFive: [Writer]
+  artical: [Artical]
+  detail(id: Int): detail
+}

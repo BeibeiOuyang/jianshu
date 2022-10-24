@@ -1,0 +1,61 @@
+
+
+.cdfang-header {
+  .cdfang-header-item {
+    width: 300px;
+    line-height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 0 16px 0;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    * {
+      cursor: pointer;
+    }
+    > .cdfang-header-item-pv {
+      cursor: default;
+      font-size: 14px;
+    }
+  }
+}
+
+.header-wrapper{
+  z-index: 5;
+  position: relative;
+  height: 56px;
+  border-bottom: 1px solid #f0f0f0;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 56px;
+    background: url('../../statics/logo.png');
+    background-size: contain;
+  }
+  .menu {
+    width: 960px;
+    padding-right: 70px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100%;
+    .menu-item {
+      line-height: 56px;
+      padding: 0 15px;
+      font-size: 17px;
+      color: #333;
+      cursor: pointer;
+      &.left {
+        float: left;
+      }
+      &.activate {
+        color: #ea6f5a;
+      }
+    }
+  }
+  
+}

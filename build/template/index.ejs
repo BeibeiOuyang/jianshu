@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="dns-prefetch" href="//package.cdfangyuan.cn" />
+    <meta
+      name="viewport"
+      content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="简书是一个优质的创作社区，在这里，你可以任性地创作，一篇短文、一张照片、一首诗、一幅画……我们相信，每个人都是生活中的艺术家，有着无穷的创造力。" />
+    <meta name="keywords" content="简书,简书官网,图文编辑软件,简书下载,图文创作,创作软件,原创社区,小说,散文,写作,阅读" />
+    <title>简书 - 创作你的创作</title>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?89c87739b200c8c68eca13f9fcb7ccbe';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 根据不同的环境，引入不同的cdn -->
+    <% if (htmlWebpackPlugin.options.env !== 'production') { %>
+    <script src="https://package.cdfangyuan.cn/react@17.0.1.development.js"></script>
+    <script src="https://package.cdfangyuan.cn/react-dom@17.0.1.development.js"></script>
+    <% } else { %>
+      <script src="https://package.cdfangyuan.cn/react@17.0.1.production.min.js"></script>
+      <script src="https://package.cdfangyuan.cn/react-dom@17.0.1.production.min.js"></script>
+    <script src="https://package.cdfangyuan.cn/quicklink@1.0.1.min.js"></script>
+    <script>
+      // 注册 serviceWorker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+      // 开启 quicklink
+      window.addEventListener('load', () => {
+        quicklink();
+      });
+    </script>
+    <% } %>
+    <script src="https://package.cdfangyuan.cn/lodash@4.17.20.min.production.js"></script>
+    <script src="https://package.cdfangyuan.cn/bizcharts@3.5.8.js"></script>
+    <script src="https://package.cdfangyuan.cn/data-set@0.11.1.min.production.js"></script>
+  </body>
+</html>
