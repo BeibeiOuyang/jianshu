@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import List from './components/List'
-import Recommend from './components/Recommend'
-import Writer from './components/Writer'
+import React, { Component } from 'react';
+import List from './components/List';
+import Recommend from './components/Recommend';
+import Writer from './components/Writer';
 // import {BackTop} from '../../common/tools'
 import './styles.less';
 
@@ -21,7 +21,7 @@ const Home: React.FunctionComponent = () => {
         <Writer />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

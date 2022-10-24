@@ -1,5 +1,3 @@
-
-
 declare namespace jianShu {
   interface WriterData {
     __v?: number;

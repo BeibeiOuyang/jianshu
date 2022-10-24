@@ -11,11 +11,11 @@ const App = lazy(() => import('./containers/App/index'));
 
 ReactDOM.render(
   <Suspense fallback={<Loading height="100vh" tip={LOADING_TIP} />}>
-      <BrowserRouter>
-        <App>
-          <Routes />
-        </App>
-      </BrowserRouter>
+    <BrowserRouter>
+      <App>
+        <Routes />
+      </App>
+    </BrowserRouter>
   </Suspense>,
   document.getElementById('root')
 );
