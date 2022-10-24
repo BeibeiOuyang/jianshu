@@ -35,12 +35,12 @@ const Detail: React.FunctionComponent<RouteComponentProps> = (location) => {
   const [detail, changeDetail] = useState(initDetail);
 
   useEffect(() => {
-    let temppath = location.location.pathname;
-    //截取最后一个/后的值
+    const temppath = location.location.pathname;
+    // 截取最后一个/后的值
     // let detailId = temppath.match(/([0-9]+)$/g);
     // let detailId = temppath.split('/')
-    var site = temppath.lastIndexOf('/');
-    let detailId = temppath.substring(site + 1, temppath.length);
+    const site = temppath.lastIndexOf('/');
+    const detailId = temppath.substring(site + 1, temppath.length);
     // requestDetailWrapper(detailId)
     changeDetail(detailList[Number(detailId) - 1]);
   }, []);

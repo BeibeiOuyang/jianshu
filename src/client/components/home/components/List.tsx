@@ -32,8 +32,7 @@ const ArticalList: React.FunctionComponent<RouteComponentProps> = ({
 
   return (
     <ul className="list-wrapper">
-      {articleList.map((item, index) => {
-        return (
+      {articleList.map((item, index) => (
           <div
             onClick={(e) => selectProvice(e)}
             artical-id={item.id}
@@ -47,8 +46,7 @@ const ArticalList: React.FunctionComponent<RouteComponentProps> = ({
               {item.imgUrl && <img alt="img" src={item.imgUrl} />}
             </li>
           </div>
-        );
-      })}
+        ))}
       {/* <div className="load-more" onClick={() => getMoreList(page)}>更多文字</div> */}
       <div className="load-more">更多文字</div>
     </ul>

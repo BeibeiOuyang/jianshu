@@ -1,7 +1,7 @@
 // import { ObjectID } from 'mongodb'
+import _ from 'lodash'
 import writerModel from '../../models/writerModel';
 import articalModel from '../../models/articalModel'
-import _ from 'lodash'
 
 interface IdDetail {
   id: number;
@@ -66,12 +66,10 @@ export default {
             imgUrl: 'test artical abbr imgurl',
           }
         ];
-      } else {
-        if (args.id){
+      } else if (args.id){
           articalList = await articalModel.find({id: args.id}).limit(3);
         }
         else{articalList = await articalModel.find({}).limit(3);}
-      }
       return articalList;
     },
   

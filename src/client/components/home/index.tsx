@@ -5,8 +5,7 @@ import Writer from './components/Writer';
 // import {BackTop} from '../../common/tools'
 import './styles.less';
 
-const Home: React.FunctionComponent = () => {
-  return (
+const Home: React.FunctionComponent = () => (
     <div className="home-wrapper">
       <div className="home-left">
         <img
@@ -22,6 +21,5 @@ const Home: React.FunctionComponent = () => {
       </div>
     </div>
   );
-};
 
 export default Home;

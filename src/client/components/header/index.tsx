@@ -27,7 +27,7 @@ const Header: React.FunctionComponent<RouteComponentProps> = ({
 
   return (
     <div className="header-wrapper">
-      <div className="logo" key="logo"></div>
+      <div className="logo" key="logo" />
       <Menu
         className="menu"
         theme="light"
