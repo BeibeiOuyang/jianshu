@@ -7,7 +7,7 @@ const { useState, useContext, useEffect } = React;
 function numFilter(numStr: string) {
   const num = Number(numStr);
   if (num > 1000) {
-    return `${(num / 1000).toFixed(0)  }k`;
+    return `${(num / 1000).toFixed(0)}k`;
   }
   return numStr;
 }
