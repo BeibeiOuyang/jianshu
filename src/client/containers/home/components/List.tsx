@@ -29,7 +29,6 @@ const ArticalList: React.FunctionComponent<RouteComponentProps> = ({
 
   const selectProvice = (e: any) => {
     // history.push(`/detail/${e.currentTarget.getAttribute('artical-id')}`);
-
   };
 
   return (
@@ -41,7 +40,7 @@ const ArticalList: React.FunctionComponent<RouteComponentProps> = ({
         //   key={item.id}
         // >
         <div>
-          <Link to={"/detail/" + (index + 1)}>
+          <Link to={'/detail/' + (index + 1)}>
             <li className="list-item">
               <div className="list-info">
                 <h3>{item.title}</h3>

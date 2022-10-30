@@ -8,7 +8,7 @@ function Routes() {
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/detail/:id" component={Detail} />
-      <Redirect to='/' />
+      <Redirect to="/" />
     </Switch>
     // <BrowserRouter>
     //   <div>

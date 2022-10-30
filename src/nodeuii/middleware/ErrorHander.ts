@@ -17,7 +17,6 @@ const ErrorHander = {
     // 捕获 404 错误
     app.use(async (ctx: Koa.Context, next: Koa.Next) => {
       await next();
-      
       if (ctx.status === 404 && ctx.url !== '/404.html') {
         ctx.redirect('/');
       }
