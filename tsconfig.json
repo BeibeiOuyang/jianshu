@@ -28,10 +28,10 @@
     "./src",
     "./build",
     "./types",
-    "./__tests__"
   ],
   "exclude": [
     "./node_modules",
-    "./__mocks__"
+    "./__mocks__",
+    "./__tests__"
   ]
 }

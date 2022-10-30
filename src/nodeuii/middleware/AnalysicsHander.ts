@@ -1,6 +1,5 @@
 import * as Koa from 'koa';
 import log4js from 'log4js';
-// import analyticsModel from '../models/analyticsModel';
 
 const logger = log4js.getLogger('globallog');
 
@@ -19,6 +18,9 @@ const analyticsHander = {
           const matchedArray = queryString.match(/(?<={)\w+/);
           const routerName = matchedArray == null ? '' : matchedArray[0];
         } 
+        else{
+          
+        }
       }
       await next();
     });
